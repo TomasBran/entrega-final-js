@@ -1,7 +1,6 @@
 import myJson from './cards.json' assert {type: 'json'}
 
 let moneyDisplay = document.getElementById("total");
-let itemList = document.getElementById("item-list");
 
 localStorage.setItem("totalMoney" , Number(localStorage.getItem("totalMoney")).toFixed(2));
 
@@ -285,14 +284,8 @@ function emptySingleCard(cardIndex){
         Swal.fire(`No hay ninguna copia de ${datos[cardIndex].name} en el carrito`, "", "warning");
     }
 
-
-
-    
     
 }
-
-
-
 
 // FIN SECCION EMPTY CART // 
 
@@ -302,8 +295,6 @@ function emptySingleCard(cardIndex){
 
 // SECCION BUY //
 
-
-// Esta funcion es para que cuando llegue al menu de comprar, tire un color de mana aleatorio. Ya es lujo //
 function randomManaIcon(){
     switch(Math.floor(Math.random() * 5)){
         case 0:
@@ -371,6 +362,8 @@ function addCardsToBuyList(){
 // FIN SECCION BUY//
 
 
+
+
 // SECCION FILTRO // 
 
 function filterCards(rarity){
@@ -396,8 +389,6 @@ let raritySelect = document.getElementsByName("rarity-filter")[0];
 raritySelect.addEventListener("change", () => {
     filterCards(raritySelect.value);
 })
-
-
 // FIN SECCION FILTRO //
 
 
@@ -463,8 +454,6 @@ function renderCard(title, imageSource, price, rarity){
     amountDivContainer.appendChild(amountInput);
     amountDivContainer.appendChild(plusButton);
     cardContainer.appendChild(cardToCartButton);
-
-
 
 }
 
