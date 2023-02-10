@@ -269,6 +269,8 @@ function emptySingleCard(cardIndex){
             if (result.isConfirmed){
                 Swal.fire(`Has eliminado las copias de ${datos[cardIndex].name} del carrito`, "", "success");
     
+
+                
                 updateAmountBougth(0 , cardIndex);
                 localStorage.setItem("cardsData", JSON.stringify(numberOfCardsBought()));
                 disableBuyIfEmptyCart();
