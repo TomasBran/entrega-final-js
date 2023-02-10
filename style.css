@@ -1,0 +1,135 @@
+body{
+    background-image: url("./images/mtg-wallpaper2.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color:white;
+}
+
+h1, h3{
+    display: flex;
+    justify-content: center;
+}
+
+.cart-section{
+    position: fixed;
+    right: 5%;
+    top: 2%;
+    background-color: rgba(0, 0, 0, 0.281);
+    padding: 8px;
+    border-radius: 10%;
+}
+
+.empty-section{
+    display: flex;
+    justify-content: center;
+}
+
+.empty-cart-button{
+    height: 30px;
+}
+
+.buy-section{
+    display: flex;
+    align-items: center;
+}
+
+.buy-button{
+    margin-right: 10px;
+}
+
+.button-container{
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+}
+.button-container button{
+    height: 30px;
+    width: 125%;
+    font-size: 125%;
+}
+
+h3{
+    font-size: 150%;
+}
+
+.card-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+}
+
+@media (max-width: 930px){
+    .card-item{
+        width: 50%;
+    }
+}
+
+@media (max-width: 480px){
+    .card-item{
+        width: 100%;
+    }
+}
+
+.cards-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.amount-div-container{
+    display: flex;
+    align-items: center;
+}
+
+.amount-div-container input{
+    margin: 3px;
+    text-align: center;
+}
+
+.card-amount{
+    width: 25px;
+}
+
+.card-title{
+    margin-top:50px;
+}
+
+.card{
+    max-width: 225px;
+}
+
+.modal-text{
+    visibility: hidden;
+}
+
+.active{
+    background-color: rgba(240, 240, 240, 0.452);
+}
+
+input{
+    background-color: white;
+}
+
+p, h4{
+    text-shadow: -1px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1px black;
+}
+
+button{
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.rarity-filter:hover{
+    transform:scale(1.08);
+    transition: transform 0.3s ease;
+}
+
+.filter-container{
+    flex-direction: column;
+    position: fixed;
+    top: 6%;
+}
